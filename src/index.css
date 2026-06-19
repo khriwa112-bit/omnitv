@@ -5,23 +5,23 @@
   --font-display: "DynaPuff", cursive;
   --font-mono: "Sour Gummy", cursive;
 
-  --color-primary-50: #f0fdf4;
-  --color-primary-100: #dcfce7;
-  --color-primary-500: #22c55e;
-  --color-primary-600: #16a34a;
-  --color-primary-700: #15803d;
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-500: #ef4444;
+  --color-primary-600: #dc2626;
+  --color-primary-700: #b91c1c;
 
-  --color-dark-bg: #ffffff;
-  --color-dark-surface: #f0fdf4;
-  --color-dark-card: #f0fdf4;
+  --color-dark-bg: #000000;
+  --color-dark-surface: #18181b;
+  --color-dark-card: #18181b;
 }
 
 @layer utilities {
   .text-glow-cyan {
-    text-shadow: 0 0 12px rgba(22,163,74,0.15);
+    text-shadow: 0 0 12px rgba(220,38,38,0.25);
   }
   .bg-glow-cyan {
-    box-shadow: 0 0 25px rgba(22,163,74,0.10);
+    box-shadow: 0 0 25px rgba(220,38,38,0.15);
   }
 }
 
@@ -31,14 +31,14 @@
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f0fdf4;
+  background: #09090b;
 }
 ::-webkit-scrollbar-thumb {
-  background: #bbf7d0;
+  background: #3f3f46;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #86efac;
+  background: #52525b;
 }
 
 /* Animations */

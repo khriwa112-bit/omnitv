@@ -33,7 +33,7 @@ export default function App() {
     if (!widgetMsg.trim()) return;
     
     // Redirect to real WhatsApp API with customized text
-    const cleanMsg = encodeURIComponent(`[tvpikoma] ${widgetMsg}`);
+    const cleanMsg = encodeURIComponent(`[omnitv] ${widgetMsg}`);
     window.open(`https://wa.me/447449708976?text=${cleanMsg}`, "_blank", "noopener,noreferrer");
     setWidgetMsg("");
     setWhatsappWidgetOpen(false);
@@ -99,10 +99,10 @@ export default function App() {
           <div className="absolute bottom-16 right-0 w-80 bg-white border border-gray-200 rounded-2xl shadow-2xl overflow-hidden text-left" id="whatsapp-widget-bubble">
             <div className="px-4 py-3 bg-[#005c4b] flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-full bg-emerald-800 border border-emerald-600/40 flex items-center justify-center text-sm">👩‍💻</div>
+                <div className="w-8 h-8 rounded-full bg-zinc-700 border border-zinc-600 flex items-center justify-center text-sm">👩‍💻</div>
                 <div>
-                  <h4 className="text-xs font-bold text-white">Kim van tvpikoma</h4>
-                  <span className="text-[9px] text-emerald-300 block">Antwoordt meestal binnen 2 min.</span>
+                  <h4 className="text-xs font-bold text-white">Kim van omnitv</h4>
+                  <span className="text-[9px] text-red-300 block">Antwoordt meestal binnen 2 min.</span>
                 </div>
               </div>
               <button onClick={() => setWhatsappWidgetOpen(false)} className="p-1 rounded-full text-white/60 hover:text-white">
@@ -112,7 +112,7 @@ export default function App() {
 
             <div className="p-4 bg-sky-50 flex flex-col gap-2 min-h-[120px]">
               <div className="self-start max-w-[90%] rounded-r-xl rounded-bl-xl bg-white border border-gray-100 text-xs p-3 shadow-sm text-left">
-                <p className="leading-relaxed text-gray-700">Beste! Welkom bij tvpikoma support. Ik help je graag met de installatie of zendervragen. Wat wil je graag weten?</p>
+                <p className="leading-relaxed text-gray-700">Beste! Welkom bij omnitv support. Ik help je graag met de installatie of zendervragen. Wat wil je graag weten?</p>
                 <span className="text-[8px] text-gray-400 block text-right mt-1 font-sans">Nu</span>
               </div>
             </div>
@@ -122,7 +122,7 @@ export default function App() {
                 type="text" value={widgetMsg} onChange={(e) => setWidgetMsg(e.target.value)} placeholder="Typ je bericht..."
                 className="flex-1 bg-white border border-gray-200 rounded-lg py-2 px-3 text-xs text-gray-900 focus:outline-none focus:border-cyan-400 font-sans"
               />
-              <button type="submit" className="p-2 rounded-full bg-emerald-500 text-white hover:bg-emerald-600 shrink-0" aria-label="Verstuur">
+              <button type="submit" className="p-2 rounded-full bg-red-600 text-white hover:bg-red-700 shrink-0" aria-label="Verstuur">
                 <Send className="w-3.5 h-3.5" />
               </button>
             </form>
@@ -131,11 +131,11 @@ export default function App() {
 
         <button
           onClick={() => setWhatsappWidgetOpen(!whatsappWidgetOpen)}
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 flex items-center justify-center shadow-2xl hover:scale-105 active:scale-95 transition-all text-white cursor-pointer group"
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-red-600 hover:bg-red-700 flex items-center justify-center shadow-2xl hover:scale-105 active:scale-95 transition-all text-white cursor-pointer group"
           aria-label="Open WhatsApp livechat"
         >
           {whatsappWidgetOpen ? <X className="w-6 h-6 stroke-[2.5]" /> : <MessageSquare className="w-6 h-6 stroke-[2.5]" />}
-          <span className="absolute right-14 bg-emerald-500 border border-emerald-400 text-white font-bold text-xs px-3 py-1.5 rounded-lg whitespace-nowrap shadow-xl opacity-0 group-hover:opacity-100 transition-opacity hidden sm:block pointer-events-none tracking-wide">
+          <span className="absolute right-14 bg-red-600 border border-red-500 text-white font-bold text-xs px-3 py-1.5 rounded-lg whitespace-nowrap shadow-xl opacity-0 group-hover:opacity-100 transition-opacity hidden sm:block pointer-events-none tracking-wide">
             Support Live (Bereikbaar!)
           </span>
         </button>

@@ -127,7 +127,7 @@ export const WHATSAPP_TESTIMONIALS: Testimonial[] = [
     name: "Kees van der Velde",
     avatar: "👨‍💻",
     date: "Gisteren",
-    message: "Hoi tvpikoma support, ik wilde even laten weten dat de instelling op mijn LG TV binnen 3 minuten gelukt was. De F1 stream is zéér scherp zonder buffering! 🏎️💨",
+    message: "Hoi omnitv support, ik wilde even laten weten dat de instelling op mijn LG TV binnen 3 minuten gelukt was. De F1 stream is zéér scherp zonder buffering! 🏎️💨",
     replyTime: "12:31",
     isVerified: true
   },
@@ -172,18 +172,18 @@ export const WHATSAPP_TESTIMONIALS: Testimonial[] = [
 export const FAQ_DATA: FAQItem[] = [
   {
     id: "faq-1",
-    question: "Wat is tvpikoma IPTV en hoe werkt het precies?",
-    answer: "tvpikoma is een premium IPTV provider die televisie via het internet streamt. Je hebt geen schotel of coax-kabels meer nodig. Met ons abonnement krijg je via een handige app op je Smart TV, telefoon, tablet of computer direct toegang tot meer dan 20.000+ live zenders, waaronder alle Nederlandse zenders, sportkanalen (ESPN, Ziggo, Viaplay) en een enorme bibliotheek aan films en series (VOD)."
+    question: "Wat is omnitv IPTV en hoe werkt het precies?",
+    answer: "omnitv is een premium IPTV provider die televisie via het internet streamt. Je hebt geen schotel of coax-kabels meer nodig. Met ons abonnement krijg je via een handige app op je Smart TV, telefoon, tablet of computer direct toegang tot meer dan 20.000+ live zenders, waaronder alle Nederlandse zenders, sportkanalen (ESPN, Ziggo, Viaplay) en een enorme bibliotheek aan films en series (VOD)."
   },
   {
     id: "faq-2",
     question: "Is de installatie ingewikkeld en welke apparaten worden ondersteund?",
-    answer: "Nee, de installatie is heel eenvoudig en binnen 5 minuten gepiept! tvpikoma werkt op vrijwel elk apparaat: Smart TV's (Samsung, LG, Sony met apps zoals IPTV Smarters, Flix IPTV of IBOTV), Amazon Fire TV Stick, Android TV boxen, Apple TV, smartphones (iOS/Android), tablets, Chromecast en PC. Na bestelling sturen we je een heldere, stap-voor-stap handleiding per e-mail toe, en onze support helpt je direct via WhatsApp als je er niet uitkomt."
+    answer: "Nee, de installatie is heel eenvoudig en binnen 5 minuten gepiept! omnitv werkt op vrijwel elk apparaat: Smart TV's (Samsung, LG, Sony met apps zoals IPTV Smarters, Flix IPTV of IBOTV), Amazon Fire TV Stick, Android TV boxen, Apple TV, smartphones (iOS/Android), tablets, Chromecast en PC. Na bestelling sturen we je een heldere, stap-voor-stap handleiding per e-mail toe, en onze support helpt je direct via WhatsApp als je er niet uitkomt."
   },
   {
     id: "faq-3",
     question: "Zit ik vast aan een langdurig contract of abonnement?",
-    answer: "Absoluut niet. Bij tvpikoma hanteren we uitsluitend flexibele pre-paid pakketten. Je kiest zelf of je 1, 3, 6 of 12 maanden wilt kijken. Na deze periode stopt het abonnement automatisch, tenzij je er zelf voor kiest om te verlengen. Geen automatische incasso's en geen stilzwijgende verlengingen. Je zit dus nergens aan vast!"
+    answer: "Absoluut niet. Bij omnitv hanteren we uitsluitend flexibele pre-paid pakketten. Je kiest zelf of je 1, 3, 6 of 12 maanden wilt kijken. Na deze periode stopt het abonnement automatisch, tenzij je er zelf voor kiest om te verlengen. Geen automatische incasso's en geen stilzwijgende verlengingen. Je zit dus nergens aan vast!"
   },
   {
     id: "faq-4",
@@ -197,7 +197,7 @@ export const FAQ_DATA: FAQItem[] = [
   },
   {
     id: "faq-6",
-    question: "Kan ik het tvpikoma abonnement op meerdere apparaten tegelijkertijd gebruiken?",
+    question: "Kan ik het omnitv abonnement op meerdere apparaten tegelijkertijd gebruiken?",
     answer: "Standaard is ons abonnement geschikt voor 1 apparaat tegelijk (1 actieve stream). Mocht je op meerdere TV's of apparaten tegelijk in huis willen kijken, dan kun je in onze prijsconfigurator eenvoudig upgraden naar 2, 3 of 4 schermen voor je gehele huishouden tegen een flinke korting."
   },
   {

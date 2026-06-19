@@ -18,8 +18,8 @@ function PhoneFrame({ src, index }: { src: string; index: number }) {
         borderRadius: 24,
         overflow: "hidden",
         boxShadow:
-          "0 8px 16px rgba(0,0,0,0.08), 0 20px 50px rgba(0,0,0,0.10), 0 0 40px rgba(22,163,74,0.08)",
-        border: "1px solid rgba(0,0,0,0.06)",
+          "0 8px 16px rgba(0,0,0,0.3), 0 20px 50px rgba(0,0,0,0.25), 0 0 40px rgba(220,38,38,0.12)",
+        border: "1px solid rgba(255,255,255,0.06)",
       }}>
         <img
           src={src}
@@ -47,12 +47,12 @@ function MarqueeRow({ images, reverse = false }: { images: string[]; reverse?: b
 
 export default function WhatsAppReviews() {
   return (
-    <section className="bg-gradient-to-br from-emerald-800 to-green-900 text-white py-16 border-b-2 border-green-700" style={{ overflowX: "hidden" }} id="reviews-section">
+    <section className="bg-gradient-to-br from-red-950 to-black text-white py-16 border-b-2 border-zinc-800" style={{ overflowX: "hidden" }} id="reviews-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs uppercase font-sans text-emerald-300 font-bold tracking-widest bg-white/10 border border-white/20 px-3 py-1 rounded-full mb-3 inline-block">23.000+ TEVREDEN KLANTEN</span>
+          <span className="text-xs uppercase font-sans text-red-400 font-bold tracking-widest bg-white/10 border border-white/20 px-3 py-1 rounded-full mb-3 inline-block">23.000+ TEVREDEN KLANTEN</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold font-display tracking-tight text-white mb-4">#1 IPTV in Nederland volgens onze klanten</h2>
-          <p className="text-green-200 text-sm sm:text-base">We laten onze WhatsApp supportberichten spreken. Hier zijn echte onbewerkte reacties van klanten.</p>
+          <p className="text-zinc-400 text-sm sm:text-base">We laten onze WhatsApp supportberichten spreken. Hier zijn echte onbewerkte reacties van klanten.</p>
         </div>
       </div>
 
@@ -62,11 +62,11 @@ export default function WhatsAppReviews() {
       </div>
 
       <div className="mt-10 text-center">
-        <p className="text-xs text-green-200 mb-4 inline-flex items-center gap-1.5 justify-center">
+        <p className="text-xs text-zinc-400 mb-4 inline-flex items-center gap-1.5 justify-center">
           <MessageSquare className="w-4 h-4" /> Heb je zelf een vraag en wil je live met support praten?
         </p><br />
         <a href="https://wa.me/447449708976" target="_blank" rel="noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-amber-400 text-green-900 hover:bg-amber-500 font-bold text-xs tracking-wide transition-all uppercase shadow-lg">
+          className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-red-600 text-white hover:bg-red-700 font-bold text-xs tracking-wide transition-all uppercase shadow-lg">
           Start WhatsApp Chat &rarr;
         </a>
       </div>
@@ -74,7 +74,7 @@ export default function WhatsAppReviews() {
       {/* Payment methods */}
       <div className="max-w-3xl mx-auto px-4 mt-14">
         <div className="text-center mb-6">
-          <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-300 font-sans bg-white/10 border border-white/20 px-3 py-1 rounded-full inline-block mb-3">Betaalmethoden</span>
+          <span className="text-[10px] font-bold uppercase tracking-widest text-red-400 font-sans bg-white/10 border border-white/20 px-3 py-1 rounded-full inline-block mb-3">Betaalmethoden</span>
           <h3 className="text-2xl font-extrabold font-display text-white">Betaal zoals jij wilt</h3>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-3">
