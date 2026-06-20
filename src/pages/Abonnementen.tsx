@@ -4,23 +4,6 @@ import { fireWhatsAppConversion } from "../utils/gtag";
 
 const PLANS = [
   {
-    id: "1_month",
-    label: "1 Maand",
-    price: "14,99",
-    perMonth: "14,99",
-    total: "14,99",
-    badge: null,
-    features: [
-      "80.000+ Live Kanalen",
-      "200.000+ Films & Series (VOD)",
-      "4K/UHD Beeldkwaliteit",
-      "Stabiele Servers (99,9% uptime)",
-      "24/7 WhatsApp Support",
-      "M3U & Xtream Codes",
-    ],
-    waText: "Hoi%2C%20ik%20wil%20het%201%20maand%20abonnement%20van%20omnitv%20bestellen",
-  },
-  {
     id: "3_months",
     label: "3 Maanden",
     price: "11,99",
@@ -115,7 +98,7 @@ export default function Abonnementen() {
       {/* Plans grid */}
       <section className="bg-zinc-950 py-16 border-b border-zinc-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {PLANS.map((plan) => {
               const isBest = plan.id === "12_months";
               return (
