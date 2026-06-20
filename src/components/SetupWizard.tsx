@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Tv, Cpu, Tablet, BookOpen, Smartphone, Laptop } from "lucide-react";
+import { fireWhatsAppConversion } from "../utils/gtag";
 
 export default function SetupWizard() {
   const [selectedDevice, setSelectedDevice] = useState<"smart_tv"|"firestick"|"android"|"apple"|"pc">("smart_tv");
@@ -56,7 +57,7 @@ export default function SetupWizard() {
                 <span className="font-bold text-white">Tip:</span> Installeer <strong className="text-white">IPTV Smarters Pro</strong> — de meest stabiele speler.
               </div>
             </div>
-            <a href="https://wa.me/447449708976" target="_blank" rel="noreferrer"
+            <a href="https://wa.me/447449708976" target="_blank" rel="noreferrer" onClick={fireWhatsAppConversion}
               className="mt-6 py-3.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs tracking-wide text-center uppercase shadow-lg block transition-colors">
               Vraag hulp gratis aan
             </a>

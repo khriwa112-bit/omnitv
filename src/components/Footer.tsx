@@ -1,4 +1,5 @@
 import { Mail, Phone, ShieldCheck } from "lucide-react";
+import { fireWhatsAppConversion } from "../utils/gtag";
 
 interface FooterProps {
   onScrollTo: (selector: string) => void;
@@ -59,7 +60,7 @@ export default function Footer({ onScrollTo, onOpenReseller }: FooterProps) {
                 className="flex items-center gap-2 text-red-400 hover:text-red-300 font-bold transition-colors text-left">
                 <ShieldCheck className="w-4 h-4 shrink-0" /> Wordt een Reseller
               </button>
-              <a href="https://wa.me/447449708976" target="_blank" rel="noreferrer"
+              <a href="https://wa.me/447449708976" target="_blank" rel="noreferrer" onClick={fireWhatsAppConversion}
                 className="flex items-center gap-2 text-zinc-400 hover:text-red-400 transition-colors">
                 <Phone className="w-4 h-4 shrink-0" /> WhatsApp 24/7 Support
               </a>

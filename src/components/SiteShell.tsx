@@ -1,5 +1,6 @@
 import { useState, FormEvent, ReactNode } from "react";
 import { useNavigate } from "react-router-dom";
+import { fireWhatsAppConversion } from "../utils/gtag";
 import Header from "./Header";
 import Footer from "./Footer";
 import ResellerModal from "./ResellerModal";
@@ -30,6 +31,7 @@ export default function SiteShell({ children }: SiteShellProps) {
   const handleWhatsappWidgetSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!widgetMsg.trim()) return;
+    fireWhatsAppConversion();
     const cleanMsg = encodeURIComponent(`[omnitv] ${widgetMsg}`);
     window.open(`https://wa.me/447449708976?text=${cleanMsg}`, "_blank", "noopener,noreferrer");
     setWidgetMsg("");

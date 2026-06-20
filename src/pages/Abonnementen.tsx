@@ -1,6 +1,7 @@
 import { Check, Phone } from "lucide-react";
 import SiteShell from "../components/SiteShell";
 import PricingCalculator from "../components/PricingCalculator";
+import { fireWhatsAppConversion } from "../utils/gtag";
 
 const TRUST = [
   "Direct actief na betaling",
@@ -34,6 +35,7 @@ export default function Abonnementen() {
             ))}
           </div>
           <a
+            onClick={fireWhatsAppConversion}
             href="https://wa.me/447449708976?text=Hoi%2C%20ik%20wil%20graag%20een%20omnitv%20abonnement%20bestellen"
             target="_blank" rel="noreferrer"
             className="inline-flex items-center gap-2.5 bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-xl text-base shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FAQ_DATA } from "../data";
 import { HelpCircle, ChevronRight, MessageCircle } from "lucide-react";
+import { fireWhatsAppConversion } from "../utils/gtag";
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -34,7 +35,7 @@ export default function FAQ() {
             <MessageCircle className="w-5 h-5 text-red-400 shrink-0" />
             <p className="text-xs text-zinc-400">Heb je een specifieke vraag? Stuur ons direct een WhatsApp-bericht.</p>
           </div>
-          <a href="https://wa.me/447449708976" target="_blank" rel="noreferrer"
+          <a href="https://wa.me/447449708976" target="_blank" rel="noreferrer" onClick={fireWhatsAppConversion}
             className="px-5 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs tracking-wide whitespace-nowrap text-center transition-colors">
             Stel via WhatsApp
           </a>

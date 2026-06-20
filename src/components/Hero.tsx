@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Play, ShieldCheck, Gift, ArrowRight, Phone } from "lucide-react";
+import { fireWhatsAppConversion } from "../utils/gtag";
 
 interface HeroProps {
   onScrollTo: (selector: string) => void;
@@ -44,7 +45,7 @@ export default function Hero({ onScrollTo }: HeroProps) {
                   Bekijk prijzen
                 </button>
                 <div className="border-t border-zinc-700" />
-                <a href="https://wa.me/447449708976" target="_blank" rel="noreferrer" className="flex items-center justify-between text-zinc-200 hover:opacity-80 transition-opacity group">
+                <a href="https://wa.me/447449708976" target="_blank" rel="noreferrer" onClick={fireWhatsAppConversion} className="flex items-center justify-between text-zinc-200 hover:opacity-80 transition-opacity group">
                   <div className="flex items-center gap-2">
                     <div className="w-7 h-7 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center">
                       <Phone className="w-3 h-3 text-red-400" />
