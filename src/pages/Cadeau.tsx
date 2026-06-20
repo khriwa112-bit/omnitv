@@ -63,16 +63,92 @@ export default function Cadeau() {
         </div>
       </section>
 
-      {/* Price highlight */}
-      <section className="bg-zinc-900 border-b border-zinc-800 py-12">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <p className="text-zinc-400 text-sm uppercase tracking-widest font-bold mb-6">Slechts</p>
-          <div className="flex items-end justify-center gap-3 mb-3">
-            <span className="text-7xl font-black text-white leading-none">€5,20</span>
-            <span className="text-zinc-400 text-lg mb-2">/maand</span>
+      {/* Pricing card */}
+      <section className="bg-zinc-950 border-b border-zinc-800 py-16">
+        <div className="max-w-lg mx-auto px-4">
+          <div className="relative rounded-2xl border-2 border-red-600 bg-gradient-to-b from-zinc-900 to-zinc-950 shadow-2xl shadow-red-950/30 overflow-hidden">
+
+            {/* Top ribbon */}
+            <div className="bg-red-600 py-2.5 text-center text-xs font-extrabold uppercase tracking-widest text-white">
+              🎁 Tijdelijke actie — 3 maanden gratis
+            </div>
+
+            <div className="p-8">
+              {/* Plan name */}
+              <div className="flex items-center justify-between mb-6">
+                <div>
+                  <h2 className="text-white font-extrabold text-xl">Premium 12+3 Pakket</h2>
+                  <p className="text-zinc-400 text-xs mt-1">15 maanden totaal voor de prijs van 12</p>
+                </div>
+                <span className="bg-red-950 border border-red-800 text-red-400 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">ACTIEF</span>
+              </div>
+
+              {/* Price comparison */}
+              <div className="flex items-end gap-4 mb-2">
+                <div>
+                  <span className="text-6xl font-black text-white leading-none">€5,20</span>
+                  <span className="text-zinc-400 text-base ml-1">/maand</span>
+                </div>
+                <div className="pb-1.5">
+                  <span className="line-through text-zinc-600 text-lg">€14,99</span>
+                  <span className="ml-2 bg-red-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wide">−65%</span>
+                </div>
+              </div>
+              <p className="text-zinc-500 text-xs mb-6">Eenmalig €78,— · Jij bespaart <strong className="text-red-400">meer dan €100</strong></p>
+
+              {/* Timeline visual */}
+              <div className="bg-zinc-800/60 border border-zinc-700 rounded-xl p-4 mb-6">
+                <p className="text-zinc-400 text-[10px] uppercase tracking-widest font-bold mb-3">Jouw tijdlijn</p>
+                <div className="flex items-center gap-1">
+                  {Array.from({ length: 12 }).map((_, i) => (
+                    <div key={i} className="flex-1 h-5 rounded bg-red-700 flex items-center justify-center text-[8px] font-bold text-white" />
+                  ))}
+                  <span className="text-zinc-500 text-xs mx-1">+</span>
+                  {Array.from({ length: 3 }).map((_, i) => (
+                    <div key={i} className="flex-1 h-5 rounded bg-red-400/40 border border-red-400 flex items-center justify-center text-[8px] font-bold text-red-300" />
+                  ))}
+                </div>
+                <div className="flex justify-between mt-2">
+                  <span className="text-zinc-400 text-[10px]">12 maanden betaald</span>
+                  <span className="text-red-400 text-[10px] font-bold">+ 3 gratis 🎁</span>
+                </div>
+              </div>
+
+              {/* Key features */}
+              <ul className="grid grid-cols-2 gap-2 mb-7">
+                {[
+                  "80.000+ Live Kanalen",
+                  "4K/8K Beeldkwaliteit",
+                  "200.000+ VOD Films",
+                  "Gratis EPG TV-Gids",
+                  "Full Catch-up",
+                  "24/7 WhatsApp Support",
+                ].map((f) => (
+                  <li key={f} className="flex items-center gap-1.5 text-xs text-zinc-300">
+                    <Check className="w-3.5 h-3.5 text-red-400 shrink-0" /> {f}
+                  </li>
+                ))}
+              </ul>
+
+              {/* CTA */}
+              <a
+                href="https://wa.me/447449708976?text=Hoi%2C%20ik%20wil%20de%203%20maanden%20cadeau%20actie%20van%20omnitv%20gebruiken%21"
+                target="_blank"
+                rel="noreferrer"
+                onClick={fireWhatsAppConversion}
+                className="w-full py-4 rounded-xl bg-red-600 hover:bg-red-700 text-white font-extrabold text-sm text-center flex items-center justify-center gap-2.5 shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all"
+              >
+                <Phone className="w-4 h-4" /> Claim nu — 3 maanden gratis
+              </a>
+
+              {/* Payment methods */}
+              <div className="flex items-center justify-center gap-3 mt-4 flex-wrap">
+                {["iDEAL", "Bancontact", "PayPal", "VISA / MC"].map((m) => (
+                  <span key={m} className="text-[10px] font-semibold text-zinc-500 bg-zinc-800 border border-zinc-700 px-2.5 py-1 rounded-md">{m}</span>
+                ))}
+              </div>
+            </div>
           </div>
-          <p className="text-zinc-500 text-sm mb-2">Eenmalig €78,— voor 12 maanden — <strong className="text-red-400">3 maanden gratis erbij</strong></p>
-          <p className="text-zinc-600 text-xs">Normaal €14,99/maand — jij bespaart meer dan €100</p>
         </div>
       </section>
 
