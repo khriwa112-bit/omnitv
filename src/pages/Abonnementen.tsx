@@ -101,10 +101,15 @@ export default function Abonnementen() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {PLANS.map((plan) => {
               const isBest = plan.id === "12_months";
+              const mobileOrder: Record<string, string> = {
+                "12_months": "order-1 sm:order-3",
+                "3_months":  "order-2 sm:order-1",
+                "6_months":  "order-3 sm:order-2",
+              };
               return (
                 <div
                   key={plan.id}
-                  className={`relative flex flex-col rounded-2xl border p-6 ${
+                  className={`relative flex flex-col rounded-2xl border p-6 ${mobileOrder[plan.id] ?? ""} ${
                     isBest
                       ? "bg-red-950/40 border-red-600 shadow-xl shadow-red-950/30"
                       : "bg-zinc-900 border-zinc-800"
