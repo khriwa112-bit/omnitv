@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface HeaderProps {
   onScrollTo: (selector: string) => void;
@@ -76,6 +77,16 @@ export default function Header({ onScrollTo, onOpenReseller }: HeaderProps) {
                 <span className="absolute bottom-0 left-3 right-3 h-0.5 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left rounded-full bg-red-500" />
               </button>
             ))}
+            <Link to="/abonnementen"
+              className="relative px-3 py-1 transition-colors cursor-pointer group hover:text-white">
+              Abonnementen
+              <span className="absolute bottom-0 left-3 right-3 h-0.5 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left rounded-full bg-red-500" />
+            </Link>
+            <Link to="/pakketten"
+              className="relative px-3 py-1 transition-colors cursor-pointer group hover:text-white">
+              Pakketten
+              <span className="absolute bottom-0 left-3 right-3 h-0.5 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left rounded-full bg-red-500" />
+            </Link>
             <button onClick={onOpenReseller}
               className="relative px-3 py-1 transition-colors cursor-pointer flex items-center gap-1 group hover:text-white">
               <Shield className="w-3.5 h-3.5" /> Reseller
@@ -110,6 +121,14 @@ export default function Header({ onScrollTo, onOpenReseller }: HeaderProps) {
                   {label}
                 </button>
               ))}
+              <Link to="/abonnementen" onClick={() => setMobileMenuOpen(false)}
+                className="font-semibold py-2 border-b text-zinc-300 hover:text-white border-zinc-800 transition-colors">
+                Abonnementen
+              </Link>
+              <Link to="/pakketten" onClick={() => setMobileMenuOpen(false)}
+                className="font-semibold py-2 border-b text-zinc-300 hover:text-white border-zinc-800 transition-colors">
+                Pakketten
+              </Link>
               <button onClick={() => { setMobileMenuOpen(false); onOpenReseller(); }}
                 className="font-semibold py-2 border-b flex items-center justify-center gap-1.5 transition-colors text-zinc-300 hover:text-white border-zinc-800">
                 <Shield className="w-4 h-4" /> Wordt Reseller
