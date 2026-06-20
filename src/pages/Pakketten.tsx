@@ -1,5 +1,7 @@
 import { Check, Phone, Tv, Zap, Shield, Star, Users } from "lucide-react";
 import SiteShell from "../components/SiteShell";
+import ChannelSearch from "../components/ChannelSearch";
+import SportsAndEntertainment from "../components/SportsAndEntertainment";
 import { fireWhatsAppConversion } from "../utils/gtag";
 
 const PACKAGES = [
@@ -102,6 +104,9 @@ export default function Pakketten() {
           </div>
         </div>
       </section>
+
+      <ChannelSearch />
+      <SportsAndEntertainment />
 
       {/* Packages grid */}
       <section className="bg-zinc-950 py-16 border-b border-zinc-800">

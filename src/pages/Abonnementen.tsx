@@ -1,5 +1,7 @@
 import { Check, Phone, Star } from "lucide-react";
 import SiteShell from "../components/SiteShell";
+import ChannelSearch from "../components/ChannelSearch";
+import SportsAndEntertainment from "../components/SportsAndEntertainment";
 import { fireWhatsAppConversion } from "../utils/gtag";
 
 const PLANS = [
@@ -94,6 +96,9 @@ export default function Abonnementen() {
           </div>
         </div>
       </section>
+
+      <ChannelSearch />
+      <SportsAndEntertainment />
 
       {/* Plans grid */}
       <section className="bg-zinc-950 py-16 border-b border-zinc-800">
