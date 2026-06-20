@@ -1,5 +1,7 @@
 import { Check, Phone, Gift, Star, Zap, Shield } from "lucide-react";
 import SiteShell from "../components/SiteShell";
+import ChannelSearch from "../components/ChannelSearch";
+import SportsAndEntertainment from "../components/SportsAndEntertainment";
 import { fireWhatsAppConversion } from "../utils/gtag";
 
 const INCLUDED = [
@@ -62,6 +64,9 @@ export default function Cadeau() {
           </div>
         </div>
       </section>
+
+      <ChannelSearch />
+      <SportsAndEntertainment />
 
       {/* Pricing card */}
       <section className="bg-zinc-950 border-b border-zinc-800 py-16">
