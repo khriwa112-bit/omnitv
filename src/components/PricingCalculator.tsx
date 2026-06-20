@@ -26,7 +26,7 @@ export default function PricingCalculator() {
   const [targetDevice, setTargetDevice] = useState("Smart TV (IPTV Smarters / Flix)");
   const [paymentMethod, setPaymentMethod] = useState("ideal");
   const [selectedBank, setSelectedBank] = useState("rabobank");
-  const [generatedLine, setGeneratedLine] = useState({ username:"", password:"", m3uUrl:"", host:"http://line.tivipikoma.com:80" });
+  const [generatedLine, setGeneratedLine] = useState({ username:"", password:"", m3uUrl:"", host:"http://line.omnitivi.com:80" });
 
   const periodInfo = PRICING_MAPPING[selectedPeriod];
   const deviceAddons = { "1":0,"2":2.25,"3":3.75,"4":4.95 };
@@ -38,7 +38,7 @@ export default function PricingCalculator() {
     e.preventDefault(); if (!email) return;
     setCheckoutStep("processing");
     const user = `swiv_${Math.random().toString(36).substring(2,8)}`;
-    setGeneratedLine({ username:user, password:Math.random().toString(36).substring(2,10), m3uUrl:`http://line.tivipikoma.com:80/get.php?auth=omnitv_${user}&output=ts`, host:"http://line.tivipikoma.com:80" });
+    setGeneratedLine({ username:user, password:Math.random().toString(36).substring(2,10), m3uUrl:`http://line.omnitivi.com:80/get.php?auth=omnitv_${user}&output=ts`, host:"http://line.omnitivi.com:80" });
     setTimeout(() => setCheckoutStep("success"), 2800);
   };
 

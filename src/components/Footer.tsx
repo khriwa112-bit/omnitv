@@ -64,7 +64,7 @@ export default function Footer({ onScrollTo, onOpenReseller }: FooterProps) {
                 <Phone className="w-4 h-4 shrink-0" /> WhatsApp 24/7 Support
               </a>
               <div className="flex items-center gap-2 text-zinc-500 text-sm">
-                <Mail className="w-4 h-4 shrink-0" /><span>support@tivipikoma.com</span>
+                <Mail className="w-4 h-4 shrink-0" /><span>support@omnitivi.com</span>
               </div>
             </div>
           </div>
