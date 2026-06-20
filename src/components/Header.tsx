@@ -82,9 +82,9 @@ export default function Header({ onScrollTo, onOpenReseller }: HeaderProps) {
               Abonnementen
               <span className="absolute bottom-0 left-3 right-3 h-0.5 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left rounded-full bg-red-500" />
             </Link>
-            <Link to="/pakketten"
+            <Link to="/cadeau"
               className="relative px-3 py-1 transition-colors cursor-pointer group hover:text-white">
-              Pakketten
+              3 Mnd Gratis
               <span className="absolute bottom-0 left-3 right-3 h-0.5 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left rounded-full bg-red-500" />
             </Link>
             <button onClick={onOpenReseller}
@@ -125,9 +125,9 @@ export default function Header({ onScrollTo, onOpenReseller }: HeaderProps) {
                 className="font-semibold py-2 border-b text-zinc-300 hover:text-white border-zinc-800 transition-colors">
                 Abonnementen
               </Link>
-              <Link to="/pakketten" onClick={() => setMobileMenuOpen(false)}
+              <Link to="/cadeau" onClick={() => setMobileMenuOpen(false)}
                 className="font-semibold py-2 border-b text-zinc-300 hover:text-white border-zinc-800 transition-colors">
-                Pakketten
+                3 Mnd Gratis
               </Link>
               <button onClick={() => { setMobileMenuOpen(false); onOpenReseller(); }}
                 className="font-semibold py-2 border-b flex items-center justify-center gap-1.5 transition-colors text-zinc-300 hover:text-white border-zinc-800">
